@@ -1313,6 +1313,21 @@ body.cv .main-container .flex-container .flex-item .job .company-wrapper {
   }
 }
 
+body.cv .main-container .flex-container .flex-item .job .company-wrapper .company-name {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+body.cv .main-container .flex-container .flex-item .job .company-wrapper .job-title,
+body.cv .main-container .flex-container .flex-item .job .company-wrapper .time-window,
+body.cv .main-container .flex-container .flex-item .job .company-wrapper .city {
+  font-family: teko, sans-serif;
+}
+
+body.cv .main-container .flex-container .flex-item .job .company-wrapper .job-title {
+  font-size: 23px;
+}
+
 body.cv .main-container .flex-container .flex-item .job .description {
   background-color: #0700225e;
   border: 1px solid #4500ff;

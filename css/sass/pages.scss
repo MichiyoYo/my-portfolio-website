@@ -441,6 +441,18 @@ body.cv {
             @media screen and (max-width: 1024px) {
               order: 2;
             }
+            .company-name {
+              font-size: 25px;
+              font-weight: 600;
+            }
+            .job-title,
+            .time-window,
+            .city {
+              font-family: $sub-heading-font;
+            }
+            .job-title {
+              font-size: 23px;
+            }
           }
           .description {
             background-color: #0700225e;
