@@ -1,0 +1,50 @@
+/* Animations */
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 2rem $secondary-color, 0 0 4rem $secondary-color,
+      0 0 6rem $secondary-color, 0 0 8rem $secondary-color,
+      0 0 10rem $secondary-color;
+    opacity: 1;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
+    opacity: 0;
+  }
+}
+
+@keyframes soft-flicker {
+  100% {
+    text-shadow: 0 0 40px $primary-color, 0 0 80px $primary-color,
+      0 0 90px $primary-color, 0 0 100px $primary-color,
+      0 0 150px $primary-color;
+  }
+  0% {
+    text-shadow: 0 0 38px $primary-color, 0 0 73px $primary-color,
+      0 0 80px $primary-color, 0 0 94px $primary-color, 0 0 140px $primary-color;
+  }
+}
+
+/* Animation classes*/
+.soft-flicker {
+  animation: soft-flicker 1s ease-in-out infinite alternate;
+}
+.flicker {
+  animation: flicker 1.5s infinite alternate;
+}
+.pink-glow {
+  text-shadow: 0 0 21px $primary-color, 0 0 42px $primary-color,
+    0 0 82px $primary-color, 0 0 92px $primary-color, 0 0 102px $primary-color,
+    0 0 151px $primary-color;
+}

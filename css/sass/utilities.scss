@@ -1,0 +1,98 @@
+/* Utilities */
+
+.block {
+  display: block !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.bold {
+  font-weight: 500 !important;
+}
+.hide {
+  display: none !important;
+}
+.no-show {
+  visibility: hidden;
+}
+.row {
+  padding: 60px 20px;
+}
+@media screen and (max-width: 600px) {
+  .row {
+    padding: 20px;
+  }
+}
+
+/* Spacers */
+$pixels: 10;
+
+@mixin margin($px) {
+  margin: $px + px !important;
+}
+@mixin margin-top($px) {
+  margin-top: $px + px !important;
+}
+@mixin margin-left($px) {
+  margin-left: $px + px !important;
+}
+@mixin margin-right($px) {
+  margin-right: $px + px !important;
+}
+@mixin margin-bottom($px) {
+  margin-bottom: $px + px !important;
+}
+@mixin padding($px) {
+  padding: $px + px !important;
+}
+@mixin padding-top($px) {
+  padding-top: $px + px !important;
+}
+@mixin padding-left($px) {
+  padding-left: $px + px !important;
+}
+@mixin padding-right($px) {
+  padding-right: $px + px !important;
+}
+@mixin padding-bottom($px) {
+  padding-bottom: $px + px !important;
+}
+
+@for $i from 1 through $pixels {
+  .m-#{$i*10} {
+    @include margin($i * 10);
+  }
+  .mt-#{$i*10} {
+    @include margin-top($i * 10);
+  }
+  .mb-#{$i*10} {
+    @include margin-bottom($i * 10);
+  }
+  .ml-#{$i*10} {
+    @include margin-left($i * 10);
+  }
+  .mr-#{$i*10} {
+    @include margin-right($i * 10);
+  }
+  .p-#{$i*10} {
+    @include padding($i * 10);
+  }
+  .pt-#{$i*10} {
+    @include padding-top($i * 10);
+  }
+  .pb-#{$i*10} {
+    @include padding-bottom($i * 10);
+  }
+  .pl-#{$i*10} {
+    @include padding-left($i * 10);
+  }
+  .pr-#{$i*10} {
+    @include padding-right($i * 10);
+  }
+}
