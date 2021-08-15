@@ -1237,3 +1237,99 @@ body.contact .main-container .row .main-container__form-holder .form #submit-but
 body.contact .main-container .row .main-container__form-holder small {
   color: #43fbfe;
 }
+
+body.cv .main-container {
+  max-width: 95%;
+}
+
+body.cv .main-container .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  body.cv .main-container .flex-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+body.cv .main-container .flex-container .flex-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  margin: 30px;
+}
+
+body.cv .main-container .flex-container .flex-item h2 {
+  font-family: "neoneon", sans-serif;
+}
+
+body.cv .main-container .flex-container .flex-item .job {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  body.cv .main-container .flex-container .flex-item .job {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+}
+
+body.cv .main-container .flex-container .flex-item .job .company-wrapper,
+body.cv .main-container .flex-container .flex-item .job .description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 30px;
+  margin: 30px;
+  background-color: #4400ff17;
+  border: 1px solid #4500ff;
+}
+
+@media screen and (max-width: 1024px) {
+  body.cv .main-container .flex-container .flex-item .job .company-wrapper,
+  body.cv .main-container .flex-container .flex-item .job .description {
+    text-align: center !important;
+  }
+}
+
+body.cv .main-container .flex-container .flex-item .job .company-wrapper {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+  body.cv .main-container .flex-container .flex-item .job .company-wrapper {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body.cv .main-container .flex-container .flex-item .job .description {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+body.cv .main-container .flex-container .flex-item .job.flipped .company-wrapper {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: left;
+}
+
+body.cv .main-container .flex-container .flex-item .job.flipped .description {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  text-align: right;
+}

@@ -402,3 +402,62 @@ body.contact {
     }
   }
 }
+
+// CV page
+body.cv {
+  .main-container {
+    max-width: 95%;
+    .flex-container {
+      display: flex;
+      @media screen and (max-width: 1024px) {
+        flex-wrap: wrap;
+      }
+      .flex-item {
+        flex: 1 0 50%;
+        margin: 30px;
+        h2 {
+          font-family: $heading-font;
+        }
+        .job {
+          display: flex;
+          @media screen and (max-width: 1024px) {
+            flex-wrap: wrap-reverse;
+          }
+          .company-wrapper,
+          .description {
+            flex: 1 1 50%;
+            padding: 30px;
+            margin: 30px;
+            background-color: #4400ff17;
+            border: 1px solid #4500ff;
+            @media screen and (max-width: 1024px) {
+              text-align: center !important;
+            }
+          }
+          .company-wrapper {
+            height: max-content;
+            text-align: right;
+            @media screen and (max-width: 1024px) {
+              order: 2;
+            }
+          }
+          .description {
+            @media screen and (max-width: 1024px) {
+              order: 1;
+            }
+          }
+          &.flipped {
+            .company-wrapper {
+              order: 2;
+              text-align: left;
+            }
+            .description {
+              order: 1;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
