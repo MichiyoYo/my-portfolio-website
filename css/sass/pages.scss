@@ -248,15 +248,20 @@ body.about {
   .row {
     grid-gap: 20px;
     &.about-me {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
+      display: flex;
       .skill-list {
         list-style-type: disc;
+      }
+      .wrapper__about-me {
+        flex: 3 1 80%;
+      }
+      .wrapper__main-skills {
+        flex: 2 0 20%;
       }
     }
     @media screen and (max-width: 1024px) {
       &.about-me {
-        grid-template-columns: 1fr;
+        flex-wrap: wrap;
       }
     }
   }
