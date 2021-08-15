@@ -443,13 +443,16 @@ body.cv {
             }
           }
           .description {
-            background-color: #4400ff17;
+            background-color: #0700225e;
             border: 1px solid #4500ff;
             @media screen and (max-width: 1024px) {
               order: 1;
             }
             p {
               font-size: 15px;
+              b {
+                font-weight: 600;
+              }
             }
           }
           &.flipped {
@@ -462,6 +465,12 @@ body.cv {
               text-align: right;
             }
           }
+        }
+        .job-flex-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          min-height: 80%;
         }
       }
     }
