@@ -285,6 +285,46 @@ a.button__secondary:focus {
 }
 
 /* Spacers */
+.m-0 {
+  margin: 0px !important;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.ml-0 {
+  margin-left: 0px !important;
+}
+
+.mr-0 {
+  margin-right: 0px !important;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
+.pt-0 {
+  padding-top: 0px !important;
+}
+
+.pb-0 {
+  padding-bottom: 0px !important;
+}
+
+.pl-0 {
+  padding-left: 0px !important;
+}
+
+.pr-0 {
+  padding-right: 0px !important;
+}
+
 .m-10 {
   margin: 10px !important;
 }
@@ -856,7 +896,16 @@ a.button__secondary:focus {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  padding: 10vw 20px 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 8vw 20px;
   top: 80px;
   position: relative;
   max-width: 75%;
@@ -875,7 +924,7 @@ a.button__secondary:focus {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  padding: 60px 20px 20px;
+  padding: 60px 20px;
 }
 
 .page-footer .footer__socials {
@@ -893,10 +942,6 @@ a.button__secondary:focus {
 
 /* ❤️ PAGES ❤️ */
 /* Home */
-body.home .main-container {
-  padding: 15vw 20px 15vw;
-}
-
 body.home .main-container .profile {
   display: -ms-grid;
   display: grid;
@@ -1351,6 +1396,7 @@ body.cv .main-container .flex-container .flex-item .job .company-wrapper .job-ti
 body.cv .main-container .flex-container .flex-item .job .description {
   background-color: #0700225e;
   border: 1px solid #4500ff;
+  position: relative;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1369,6 +1415,22 @@ body.cv .main-container .flex-container .flex-item .job .description p b {
   font-weight: 600;
 }
 
+body.cv .main-container .flex-container .flex-item .job .description:before {
+  content: "";
+  height: 2px;
+  background: #4500ff;
+  width: 30px;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  body.cv .main-container .flex-container .flex-item .job .description:before {
+    display: none;
+  }
+}
+
 body.cv .main-container .flex-container .flex-item .job.flipped .company-wrapper {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -1381,6 +1443,12 @@ body.cv .main-container .flex-container .flex-item .job.flipped .description {
       -ms-flex-order: 1;
           order: 1;
   text-align: right;
+  position: relative;
+}
+
+body.cv .main-container .flex-container .flex-item .job.flipped .description:before {
+  position: absolute;
+  left: 100%;
 }
 
 body.cv .main-container .flex-container .flex-item .job::before {

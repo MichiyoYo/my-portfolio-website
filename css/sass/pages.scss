@@ -73,7 +73,10 @@
 .main-container {
   width: fit-content;
   margin: 0 auto;
-  padding: 10vw 20px 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8vw 20px;
   top: 80px;
   position: relative;
   max-width: 75%;
@@ -90,7 +93,7 @@
   width: 100%;
   display: flex;
   text-align: center;
-  padding: 60px 20px 20px;
+  padding: 60px 20px;
   .footer__socials {
     margin: 0 auto;
     .socials-list {
@@ -108,7 +111,6 @@
 /* Home */
 body.home {
   .main-container {
-    padding: 15vw 20px 15vw;
     .profile {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -463,6 +465,7 @@ body.cv {
           .description {
             background-color: #0700225e;
             border: 1px solid $neon-purple;
+            position: relative;
             @media screen and (max-width: 1024px) {
               order: 1;
             }
@@ -470,6 +473,18 @@ body.cv {
               font-size: 15px;
               b {
                 font-weight: 600;
+              }
+            }
+            &:before {
+              content: "";
+              height: 2px;
+              background: $neon-purple;
+              width: 30px;
+              position: absolute;
+              left: -30px;
+              top: 50%;
+              @media screen and (max-width: 1024px) {
+                display: none;
               }
             }
           }
@@ -481,6 +496,11 @@ body.cv {
             .description {
               order: 1;
               text-align: right;
+              position: relative;
+              &:before {
+                position: absolute;
+                left: 100%;
+              }
             }
           }
           &::before {
