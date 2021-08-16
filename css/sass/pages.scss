@@ -73,7 +73,10 @@
 .main-container {
   width: fit-content;
   margin: 0 auto;
-  padding: 10vw 20px 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8vw 20px;
   top: 80px;
   position: relative;
   max-width: 75%;
@@ -89,16 +92,40 @@
 .page-footer {
   width: 100%;
   display: flex;
-  text-align: center;
+  flex-wrap: wrap;
   padding: 60px 20px 20px;
+  .logo-footer {
+    flex: 1 1 100%;
+    text-align: center;
+    img {
+      max-width: 64px;
+      margin: auto;
+    }
+  }
   .footer__socials {
-    margin: 0 auto;
+    text-align: center;
+    flex: 1 1 100%;
     .socials-list {
       padding: 0;
       li {
         display: inline-block;
         padding: 10px;
       }
+    }
+  }
+  .trademark {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 12px;
+    }
+    &.trademark-right {
+      justify-content: flex-end;
+    }
+    @media screen and (max-width: 600px) {
+      flex-basis: 100%;
+      justify-content: center !important;
     }
   }
 }
@@ -108,7 +135,6 @@
 /* Home */
 body.home {
   .main-container {
-    padding: 15vw 20px 15vw;
     .profile {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -259,6 +285,9 @@ body.about {
     @media screen and (max-width: 1024px) {
       &.about-me {
         flex-wrap: wrap;
+        p {
+          text-align: center;
+        }
       }
     }
   }
@@ -274,7 +303,7 @@ body.about {
       .skills-grid__grid-item {
         width: 100%;
         text-align: left;
-        background-image: linear-gradient(#03001f82, #4500ffcc);
+        background-image: linear-gradient(#03001f82, $neon-purple);
         border-bottom: 3px solid $primary-color;
         padding: 0 20px;
         border-radius: 8px;
@@ -326,7 +355,7 @@ body.contact {
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
       }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 1024px) {
         &.contact {
           grid-template-columns: 1fr;
         }
@@ -337,7 +366,8 @@ body.contact {
             text-align: left;
           }
           @media screen and (max-width: 600px) {
-            h1 {
+            h1,
+            p {
               text-align: center;
             }
           }
@@ -348,6 +378,8 @@ body.contact {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 10px;
+          margin-top: 100px;
+
           .form__message-field {
             grid-column: 1/-1;
           }
@@ -392,11 +424,14 @@ body.contact {
               width: fit-content;
               margin: auto;
             }
+            @media screen and (max-width: 600px) {
+            }
           }
         }
         @media screen and (max-width: 600px) {
           .form {
             grid-template-columns: 1fr;
+            margin-top: 50px;
           }
         }
         small {
@@ -426,6 +461,7 @@ body.cv {
         .job {
           display: flex;
           align-items: center;
+          position: relative;
           @media screen and (max-width: 1024px) {
             flex-wrap: wrap-reverse;
           }
@@ -434,9 +470,10 @@ body.cv {
             flex: 1 1 50%;
             padding: 30px;
             margin: 30px;
-
             @media screen and (max-width: 1024px) {
               text-align: center !important;
+              border: 0;
+              padding: 10px;
             }
           }
           .company-wrapper {
@@ -460,7 +497,8 @@ body.cv {
           }
           .description {
             background-color: #0700225e;
-            border: 1px solid #4500ff;
+            border: 1px solid $neon-purple;
+            position: relative;
             @media screen and (max-width: 1024px) {
               order: 1;
             }
@@ -468,6 +506,18 @@ body.cv {
               font-size: 15px;
               b {
                 font-weight: 600;
+              }
+            }
+            &:before {
+              content: "";
+              height: 2px;
+              background: $neon-purple;
+              width: 30px;
+              position: absolute;
+              left: -30px;
+              top: 50%;
+              @media screen and (max-width: 1024px) {
+                display: none;
               }
             }
           }
@@ -479,13 +529,28 @@ body.cv {
             .description {
               order: 1;
               text-align: right;
+              position: relative;
+              &:before {
+                position: absolute;
+                left: 100%;
+              }
+            }
+          }
+          &::before {
+            content: "";
+            background-color: #3500c9;
+            width: 3px;
+            height: -webkit-fill-available;
+            position: absolute;
+            left: 50%;
+            @media screen and (max-width: 1024px) {
+              display: none;
             }
           }
         }
         .job-flex-container {
           display: flex;
           flex-direction: column;
-          justify-content: space-evenly;
           min-height: 80%;
         }
       }

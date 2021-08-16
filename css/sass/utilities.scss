@@ -69,7 +69,7 @@ $pixels: 10;
   padding-bottom: $px + px !important;
 }
 
-@for $i from 1 through $pixels {
+@for $i from 0 through $pixels {
   .m-#{$i*10} {
     @include margin($i * 10);
   }
