@@ -92,16 +92,40 @@
 .page-footer {
   width: 100%;
   display: flex;
-  text-align: center;
-  padding: 60px 20px;
+  flex-wrap: wrap;
+  padding: 60px 20px 20px;
+  .logo-footer {
+    flex: 1 1 100%;
+    text-align: center;
+    img {
+      max-width: 64px;
+      margin: auto;
+    }
+  }
   .footer__socials {
-    margin: 0 auto;
+    text-align: center;
+    flex: 1 1 100%;
     .socials-list {
       padding: 0;
       li {
         display: inline-block;
         padding: 10px;
       }
+    }
+  }
+  .trademark {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 12px;
+    }
+    &.trademark-right {
+      justify-content: flex-end;
+    }
+    @media screen and (max-width: 600px) {
+      flex-basis: 100%;
+      justify-content: center !important;
     }
   }
 }
@@ -261,6 +285,9 @@ body.about {
     @media screen and (max-width: 1024px) {
       &.about-me {
         flex-wrap: wrap;
+        p {
+          text-align: center;
+        }
       }
     }
   }
