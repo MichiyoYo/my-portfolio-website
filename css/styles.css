@@ -1107,8 +1107,8 @@ body.about .skills-grid__grid-item {
   body.about .skills-grid .skills-grid__grid-item {
     width: 100%;
     text-align: left;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#03001f82), to(#4500ffcc));
-    background-image: linear-gradient(#03001f82, #4500ffcc);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#03001f82), to(#4500ff));
+    background-image: linear-gradient(#03001f82, #4500ff);
     border-bottom: 3px solid #ff32a5;
     padding: 0 20px;
     border-radius: 8px;
@@ -1290,6 +1290,7 @@ body.cv .main-container .flex-container .flex-item .job {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1312,6 +1313,8 @@ body.cv .main-container .flex-container .flex-item .job .description {
   body.cv .main-container .flex-container .flex-item .job .company-wrapper,
   body.cv .main-container .flex-container .flex-item .job .description {
     text-align: center !important;
+    border: 0;
+    padding: 10px;
   }
 }
 
@@ -1380,6 +1383,21 @@ body.cv .main-container .flex-container .flex-item .job.flipped .description {
   text-align: right;
 }
 
+body.cv .main-container .flex-container .flex-item .job::before {
+  content: "";
+  background-color: #3500c9;
+  width: 3px;
+  height: -webkit-fill-available;
+  position: absolute;
+  left: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  body.cv .main-container .flex-container .flex-item .job::before {
+    display: none;
+  }
+}
+
 body.cv .main-container .flex-container .flex-item .job-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1388,8 +1406,5 @@ body.cv .main-container .flex-container .flex-item .job-flex-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   min-height: 80%;
 }

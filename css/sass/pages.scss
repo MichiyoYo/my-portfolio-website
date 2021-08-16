@@ -274,7 +274,7 @@ body.about {
       .skills-grid__grid-item {
         width: 100%;
         text-align: left;
-        background-image: linear-gradient(#03001f82, #4500ffcc);
+        background-image: linear-gradient(#03001f82, $neon-purple);
         border-bottom: 3px solid $primary-color;
         padding: 0 20px;
         border-radius: 8px;
@@ -426,6 +426,7 @@ body.cv {
         .job {
           display: flex;
           align-items: center;
+          position: relative;
           @media screen and (max-width: 1024px) {
             flex-wrap: wrap-reverse;
           }
@@ -434,9 +435,10 @@ body.cv {
             flex: 1 1 50%;
             padding: 30px;
             margin: 30px;
-
             @media screen and (max-width: 1024px) {
               text-align: center !important;
+              border: 0;
+              padding: 10px;
             }
           }
           .company-wrapper {
@@ -460,7 +462,7 @@ body.cv {
           }
           .description {
             background-color: #0700225e;
-            border: 1px solid #4500ff;
+            border: 1px solid $neon-purple;
             @media screen and (max-width: 1024px) {
               order: 1;
             }
@@ -481,11 +483,21 @@ body.cv {
               text-align: right;
             }
           }
+          &::before {
+            content: "";
+            background-color: #3500c9;
+            width: 3px;
+            height: -webkit-fill-available;
+            position: absolute;
+            left: 50%;
+            @media screen and (max-width: 1024px) {
+              display: none;
+            }
+          }
         }
         .job-flex-container {
           display: flex;
           flex-direction: column;
-          justify-content: space-evenly;
           min-height: 80%;
         }
       }
