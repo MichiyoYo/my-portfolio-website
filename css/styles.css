@@ -241,6 +241,12 @@ a.button__secondary:focus {
   display: block !important;
 }
 
+@media screen and (max-width: 600px) {
+  .block-for-mobile {
+    display: block !important;
+  }
+}
+
 .text-center {
   text-align: center !important;
 }
@@ -1225,6 +1231,17 @@ body.contact .main-container .row .main-container__form-holder .form #submit-but
   body.contact .main-container .row .main-container__form-holder .form #submit-button {
     width: 100%;
   }
+}
+
+body.contact .main-container .row .main-container__form-holder .form .recaptcha-field {
+  grid-column: 1/-1;
+}
+
+body.contact .main-container .row .main-container__form-holder .form .recaptcha-field .g-recaptcha {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 @media screen and (max-width: 600px) {

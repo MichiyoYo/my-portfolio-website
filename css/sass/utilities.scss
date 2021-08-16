@@ -3,6 +3,11 @@
 .block {
   display: block !important;
 }
+@media screen and (max-width: 600px) {
+  .block-for-mobile {
+    display: block !important;
+  }
+}
 .text-center {
   text-align: center !important;
 }

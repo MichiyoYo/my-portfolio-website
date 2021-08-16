@@ -389,6 +389,13 @@ body.contact {
               width: 100%;
             }
           }
+          .recaptcha-field {
+            grid-column: 1/-1;
+            .g-recaptcha {
+              width: fit-content;
+              margin: auto;
+            }
+          }
         }
         @media screen and (max-width: 600px) {
           .form {
