@@ -95,6 +95,9 @@ h3 {
   h3 {
     text-align: center;
   }
+  h1 {
+    font-size: 50px;
+  }
 }
 
 p {
@@ -1037,9 +1040,6 @@ body.work .grid__item {
     body.work .grid {
       -ms-grid-columns: 1fr;
           grid-template-columns: 1fr;
-    }
-    body.work h1 {
-      font-size: 50px;
     }
   }
   @media all and (min-width: 601px) and (max-width: 1024px) {
