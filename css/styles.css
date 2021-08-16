@@ -20,7 +20,7 @@ body {
 }
 
 html {
-  background: url("/img/footer-bkg.jpg") no-repeat center center fixed;
+  background: url("./img/footer-bkg.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
