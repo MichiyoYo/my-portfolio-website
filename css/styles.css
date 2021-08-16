@@ -1204,7 +1204,7 @@ body.contact .main-container .row.contact {
   grid-gap: 40px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   body.contact .main-container .row.contact {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1216,7 +1216,8 @@ body.contact .main-container .row .main-container__copy-holder .copy h1 {
 }
 
 @media screen and (max-width: 600px) {
-  body.contact .main-container .row .main-container__copy-holder .copy h1 {
+  body.contact .main-container .row .main-container__copy-holder .copy h1,
+  body.contact .main-container .row .main-container__copy-holder .copy p {
     text-align: center;
   }
 }
@@ -1227,6 +1228,7 @@ body.contact .main-container .row .main-container__form-holder .form {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  margin-top: 100px;
 }
 
 body.contact .main-container .row .main-container__form-holder .form .form__message-field {
@@ -1293,6 +1295,7 @@ body.contact .main-container .row .main-container__form-holder .form .recaptcha-
   body.contact .main-container .row .main-container__form-holder .form {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin-top: 50px;
   }
 }
 

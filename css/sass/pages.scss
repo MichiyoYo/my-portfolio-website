@@ -328,7 +328,7 @@ body.contact {
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
       }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 1024px) {
         &.contact {
           grid-template-columns: 1fr;
         }
@@ -339,7 +339,8 @@ body.contact {
             text-align: left;
           }
           @media screen and (max-width: 600px) {
-            h1 {
+            h1,
+            p {
               text-align: center;
             }
           }
@@ -350,6 +351,8 @@ body.contact {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 10px;
+          margin-top: 100px;
+
           .form__message-field {
             grid-column: 1/-1;
           }
@@ -394,11 +397,14 @@ body.contact {
               width: fit-content;
               margin: auto;
             }
+            @media screen and (max-width: 600px) {
+            }
           }
         }
         @media screen and (max-width: 600px) {
           .form {
             grid-template-columns: 1fr;
+            margin-top: 50px;
           }
         }
         small {
