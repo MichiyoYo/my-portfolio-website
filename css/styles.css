@@ -1530,3 +1530,11 @@ body.cv .main-container .flex-container .flex-item .job-flex-container {
           flex-direction: column;
   min-height: 80%;
 }
+
+body.thank-you .main-container {
+  text-align: center;
+}
+
+body.thank-you .main-container .button__primary {
+  margin: auto;
+}
