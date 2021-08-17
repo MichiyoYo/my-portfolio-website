@@ -69,9 +69,15 @@ main {
           justify-content: center;
 }
 
-@media screen and (min-width: 812px) and (max-width: 1075px) {
+@media screen and (max-width: 1075px) {
   main {
     margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 45%;
   }
 }
 
@@ -258,9 +264,8 @@ a.button__secondary:focus {
 }
 
 a.button__gradient {
-  background: none;
+  background: #0500214d;
   padding: 10px 15px;
-  color: #ff32a5 !important;
   font-weight: 500;
 }
 
@@ -276,6 +281,12 @@ a.button__gradient:hover {
 
 .border-gradient-purple {
   border-image-source: linear-gradient(to left, #4500ff, #ff32a5);
+  color: #ff32a5 !important;
+}
+
+.border-gradient-blue {
+  border-image-source: linear-gradient(to left, #06dfe3, #4500ff);
+  color: #01a4a7 !important;
 }
 
 /* Utilities */

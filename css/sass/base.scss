@@ -39,9 +39,14 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 812px) and (max-width: 1075px) {
+@media screen and (max-width: 1075px) {
   main {
     margin-top: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 45%;
   }
 }
 footer {
@@ -189,9 +194,8 @@ a.button {
 }
 
 a.button__gradient {
-  background: none;
+  background: #0500214d;
   padding: 10px 15px;
-  color: $primary-color !important;
   font-weight: 500;
   &:hover {
     text-shadow: none !important;
@@ -204,4 +208,9 @@ a.button__gradient {
 }
 .border-gradient-purple {
   border-image-source: linear-gradient(to left, $neon-purple, $primary-color);
+  color: $primary-color !important;
+}
+.border-gradient-blue {
+  border-image-source: linear-gradient(to left, #06dfe3, #4500ff);
+  color: #01a4a7 !important;
 }
