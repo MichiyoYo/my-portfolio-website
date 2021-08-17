@@ -808,7 +808,7 @@ a.button__secondary:focus {
   background-image: linear-gradient(to right, #03001e, #270144);
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   z-index: 9999;
   display: -webkit-box;
@@ -1509,7 +1509,7 @@ body.cv .main-container .flex-container .flex-item .job::before {
   content: "";
   background-color: #3500c9;
   width: 3px;
-  height: -webkit-fill-available;
+  height: 200px;
   position: absolute;
   left: 50%;
 }
@@ -1517,6 +1517,17 @@ body.cv .main-container .flex-container .flex-item .job::before {
 @media screen and (max-width: 1024px) {
   body.cv .main-container .flex-container .flex-item .job::before {
     display: none;
+  }
+}
+
+@supports ((height: -webkit-fill-available) or (height: -moz-available) or (height: fill-available)) {
+  body.cv .main-container .flex-container .flex-item .job::before {
+    height: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    height: 200px;
+    height: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
   }
 }
 
@@ -1529,4 +1540,12 @@ body.cv .main-container .flex-container .flex-item .job-flex-container {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 80%;
+}
+
+body.thank-you .main-container {
+  text-align: center;
+}
+
+body.thank-you .main-container .button__primary {
+  margin: auto;
 }
