@@ -56,6 +56,23 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 812px) and (max-width: 1075px) {
+  main {
+    margin-top: 25%;
+  }
 }
 
 footer {
@@ -815,9 +832,9 @@ a.button__secondary:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .page-header .page-header__item:last-child {
@@ -907,7 +924,6 @@ a.button__secondary:focus {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 8vw 20px;
-  top: 80px;
   position: relative;
   max-width: 75%;
 }
@@ -1280,7 +1296,6 @@ body.contact .main-container .row .main-container__form-holder .form {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  margin-top: 100px;
 }
 
 body.contact .main-container .row .main-container__form-holder .form .form__message-field {
@@ -1347,7 +1362,6 @@ body.contact .main-container .row .main-container__form-holder .form .recaptcha-
   body.contact .main-container .row .main-container__form-holder .form {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin-top: 50px;
   }
 }
 
