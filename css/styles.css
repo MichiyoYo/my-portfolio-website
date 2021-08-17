@@ -86,27 +86,19 @@ footer {
       flex-shrink: 0;
 }
 
-h1,
-h2 {
+h1 {
   color: #ff32a5;
   font-family: "neoneon", sans-serif;
   font-weight: 300;
-}
-
-h1 {
-  font-size: 50px;
+  font-size: 60px;
   text-shadow: 0 0 20px #ff32a5;
   text-align: center;
 }
 
 h2 {
   font-family: teko, sans-serif;
-  font-size: 30px;
-}
-
-h2 span {
+  color: #ff32a5;
   font-size: 35px;
-  display: block;
 }
 
 h3 {
@@ -267,10 +259,22 @@ a.button__gradient {
   background: #0500214d;
   padding: 10px 15px;
   font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 a.button__gradient:hover {
   text-shadow: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  a.button__gradient {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .border-gradient {
@@ -1231,7 +1235,10 @@ body.about .row.about-me .wrapper__main-skills {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  body.about .row.about-me p {
+}
+
+@media screen and (max-width: 600px) {
+  body.about .row p {
     text-align: center;
   }
 }
@@ -1427,6 +1434,7 @@ body.cv .main-container .flex-container .flex-item {
 
 body.cv .main-container .flex-container .flex-item h2 {
   font-family: "neoneon", sans-serif;
+  color: #06dfe3;
 }
 
 body.cv .main-container .flex-container .flex-item .job {

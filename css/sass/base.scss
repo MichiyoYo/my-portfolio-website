@@ -52,24 +52,18 @@ main {
 footer {
   flex-shrink: 0;
 }
-h1,
-h2 {
+h1 {
   color: $primary-color;
   font-family: $heading-font;
   font-weight: 300;
-}
-h1 {
-  font-size: 50px;
+  font-size: 60px;
   text-shadow: 0 0 20px $primary-color;
   text-align: center;
 }
 h2 {
   font-family: $sub-heading-font;
-  font-size: 30px;
-}
-h2 span {
+  color: $primary-color;
   font-size: 35px;
-  display: block;
 }
 h3 {
   font-family: $sub-heading-font;
@@ -197,8 +191,15 @@ a.button__gradient {
   background: #0500214d;
   padding: 10px 15px;
   font-weight: 500;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 600;
   &:hover {
     text-shadow: none !important;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    text-align: center;
   }
 }
 .border-gradient {

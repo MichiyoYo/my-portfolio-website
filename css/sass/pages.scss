@@ -284,9 +284,11 @@ body.about {
     @media screen and (max-width: 1024px) {
       &.about-me {
         flex-wrap: wrap;
-        p {
-          text-align: center;
-        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      p {
+        text-align: center;
       }
     }
   }
@@ -454,6 +456,7 @@ body.cv {
         margin: 30px;
         h2 {
           font-family: $heading-font;
+          color: #06dfe3;
         }
         .job {
           display: flex;
