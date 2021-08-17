@@ -1520,17 +1520,6 @@ body.cv .main-container .flex-container .flex-item .job::before {
   }
 }
 
-@supports ((height: -webkit-fill-available) or (height: -moz-available) or (height: fill-available)) {
-  body.cv .main-container .flex-container .flex-item .job::before {
-    height: -moz-available;
-    /* WebKit-based browsers will ignore this. */
-    height: 200px;
-    height: -webkit-fill-available;
-    /* Mozilla-based browsers will ignore this. */
-    height: fill-available;
-  }
-}
-
 body.cv .main-container .flex-container .flex-item .job-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
