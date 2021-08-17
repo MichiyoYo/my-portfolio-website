@@ -475,7 +475,9 @@ body.cv {
           }
           .company-wrapper {
             height: max-content;
-            text-align: right;
+            text-align: center;
+            background-image: linear-gradient(to right, #01a4a7, #4500ff);
+            border-bottom: 5px solid #3500c9;
             @media screen and (max-width: 1024px) {
               order: 2;
             }
@@ -490,12 +492,6 @@ body.cv {
             }
             .job-title {
               font-size: 23px;
-            }
-          }
-          @media screen and (max-width: 600px) {
-            .company-wrapper {
-              border-bottom: 5px solid #3500c9;
-              background-image: linear-gradient(to right, #01a4a7, #4500ff);
             }
           }
           .description {
@@ -527,7 +523,7 @@ body.cv {
           &.flipped {
             .company-wrapper {
               order: 2;
-              text-align: left;
+              // text-align: left;
             }
             .description {
               order: 1;

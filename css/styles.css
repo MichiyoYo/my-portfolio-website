@@ -1468,7 +1468,10 @@ body.cv .main-container .flex-container .flex-item .job .company-wrapper {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  text-align: right;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#01a4a7), to(#4500ff));
+  background-image: linear-gradient(to right, #01a4a7, #4500ff);
+  border-bottom: 5px solid #3500c9;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1492,14 +1495,6 @@ body.cv .main-container .flex-container .flex-item .job .company-wrapper .city {
 
 body.cv .main-container .flex-container .flex-item .job .company-wrapper .job-title {
   font-size: 23px;
-}
-
-@media screen and (max-width: 600px) {
-  body.cv .main-container .flex-container .flex-item .job .company-wrapper {
-    border-bottom: 5px solid #3500c9;
-    background-image: -webkit-gradient(linear, left top, right top, from(#01a4a7), to(#4500ff));
-    background-image: linear-gradient(to right, #01a4a7, #4500ff);
-  }
 }
 
 body.cv .main-container .flex-container .flex-item .job .description {
@@ -1544,7 +1539,6 @@ body.cv .main-container .flex-container .flex-item .job.flipped .company-wrapper
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  text-align: left;
 }
 
 body.cv .main-container .flex-container .flex-item .job.flipped .description {
