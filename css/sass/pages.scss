@@ -3,7 +3,7 @@
   background-image: linear-gradient(to right, #03001e, #270144);
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   z-index: 9999;
   display: flex;
@@ -540,11 +540,17 @@ body.cv {
             content: "";
             background-color: #3500c9;
             width: 3px;
-            height: -webkit-fill-available;
+            height: 200px;
             position: absolute;
             left: 50%;
             @media screen and (max-width: 1024px) {
               display: none;
+            }
+            @supports (height: fill-available) {
+              height: -moz-available; /* WebKit-based browsers will ignore this. */
+              height: 200px; //the above property is actually not working on firefox so I set this fallback rule
+              height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+              height: fill-available;
             }
           }
         }
