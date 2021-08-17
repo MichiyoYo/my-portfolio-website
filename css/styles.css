@@ -1164,32 +1164,35 @@ body.work .grid__item {
     margin: 0;
   }
   body.work .grid .grid__item {
-    background-color: #dccfff;
+    background-image: -webkit-gradient(linear, left top, right top, from(#01a4a7), to(#4500ff));
+    background-image: linear-gradient(to right, #01a4a7, #4500ff);
+    border-bottom: 5px solid #3500c9;
     padding: 40px;
     text-align: center;
     width: auto;
     min-height: auto;
     margin: 0;
-    border-radius: 90px;
-    -webkit-transition: border-radius 0.2s ease, -webkit-box-shadow 0.2s ease;
-    transition: border-radius 0.2s ease, -webkit-box-shadow 0.2s ease;
-    transition: box-shadow 0.2s ease, border-radius 0.2s ease;
-    transition: box-shadow 0.2s ease, border-radius 0.2s ease, -webkit-box-shadow 0.2s ease;
+    -webkit-transition: -webkit-box-shadow 0.2s ease;
+    transition: -webkit-box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
   }
   body.work .grid .grid__item:hover {
-    -webkit-box-shadow: 0 0 40px #dccfff;
-            box-shadow: 0 0 40px #dccfff;
-    border-radius: 0;
+    -webkit-box-shadow: 0 0 40px #4500ff;
+            box-shadow: 0 0 40px #4500ff;
   }
   body.work .grid .grid__item .project-title {
     font-family: teko, sans-serif;
     margin-top: 0;
-    color: #5b38c9;
+    color: #dccfff;
     font-size: 30px;
   }
   body.work .grid .grid__item .project-description {
-    color: #5b38c9;
+    color: #dccfff;
     font-weight: 400;
+  }
+  body.work .grid .grid__item .project-link {
+    color: #dccfff !important;
   }
   @media all and (max-width: 600px) {
     body.work .grid {

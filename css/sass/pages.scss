@@ -222,27 +222,29 @@ body.work {
       grid-gap: 50px;
       margin: 0;
       .grid__item {
-        background-color: $text-color;
+        background-image: linear-gradient(to right, #01a4a7, #4500ff);
+        border-bottom: 5px solid #3500c9;
         padding: 40px;
         text-align: center;
         width: auto;
         min-height: auto;
         margin: 0;
-        border-radius: 90px;
-        transition: box-shadow 0.2s ease, border-radius 0.2s ease;
+        transition: box-shadow 0.2s ease;
         &:hover {
-          box-shadow: 0 0 40px $text-color;
-          border-radius: 0;
+          box-shadow: 0 0 40px $neon-purple;
         }
         .project-title {
           font-family: teko, sans-serif;
           margin-top: 0;
-          color: #5b38c9;
+          color: $text-color;
           font-size: 30px;
         }
         .project-description {
-          color: #5b38c9;
+          color: $text-color;
           font-weight: 400;
+        }
+        .project-link {
+          color: $text-color !important;
         }
       }
     }
