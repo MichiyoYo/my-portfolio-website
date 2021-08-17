@@ -546,12 +546,12 @@ body.cv {
             @media screen and (max-width: 1024px) {
               display: none;
             }
-            // @supports (height: fill-available) {
-            //   height: -moz-available; /* WebKit-based browsers will ignore this. */
-            //   height: 200px; //the above property is actually not working on firefox so I set this fallback rule
-            //   height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-            //   height: fill-available;
-            // }
+            @supports (height: fill-available) {
+              height: -moz-available; /* WebKit-based browsers will ignore this. */
+              height: 200px; //the above property is actually not working on firefox so I set this fallback rule
+              height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+              height: fill-available;
+            }
           }
         }
         .job-flex-container {
