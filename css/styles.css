@@ -2,8 +2,8 @@
 /* Fonts */
 @font-face {
   font-family: "neoneon";
-  src: url("../../fonts/Neoneon.eot");
-  src: url("../../fonts/Neoneon.eot?#iefix") format("embedded-opentype"), url("../../fonts/Neoneon.woff") format("woff"), url("../../fonts/Neoneon.ttf") format("truetype"), url("../../fonts/Neoneon.svg#rsuregular") format("svg");
+  src: url("../fonts/Neoneon.eot");
+  src: url("../fonts/Neoneon.eot?#iefix") format("embedded-opentype"), url("../fonts/Neoneon.woff") format("woff"), url("../fonts/Neoneon.ttf") format("truetype"), url("../fonts/Neoneon.svg#rsuregular") format("svg");
 }
 
 /* Base elements */
