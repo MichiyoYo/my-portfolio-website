@@ -264,10 +264,19 @@ a.button__gradient {
   width: fit-content;
   text-transform: uppercase;
   font-weight: 600;
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
 }
 
 a.button__gradient:hover {
   text-shadow: none !important;
+  -webkit-box-shadow: 0 0 20px #3500c9;
+          box-shadow: 0 0 20px #3500c9;
 }
 
 @media screen and (max-width: 600px) {

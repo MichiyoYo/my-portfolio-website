@@ -194,8 +194,12 @@ a.button__gradient {
   width: fit-content;
   text-transform: uppercase;
   font-weight: 600;
+  display: inline-block;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease-in;
   &:hover {
     text-shadow: none !important;
+    box-shadow: 0 0 20px #3500c9;
   }
   @media screen and (max-width: 600px) {
     width: 100%;
