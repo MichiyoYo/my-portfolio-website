@@ -34,6 +34,15 @@ body.home {
 main {
   width: 100%;
   flex: 1 0 auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 812px) and (max-width: 1075px) {
+  main {
+    margin-top: 25%;
+  }
 }
 footer {
   flex-shrink: 0;
