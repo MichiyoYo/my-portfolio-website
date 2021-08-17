@@ -492,6 +492,12 @@ body.cv {
               font-size: 23px;
             }
           }
+          @media screen and (max-width: 600px) {
+            .company-wrapper {
+              border-bottom: 5px solid #3500c9;
+              background-image: linear-gradient(to right, #01a4a7, #4500ff);
+            }
+          }
           .description {
             background-color: #0700225e;
             border: 1px solid $neon-purple;

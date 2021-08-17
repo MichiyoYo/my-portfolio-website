@@ -1494,6 +1494,14 @@ body.cv .main-container .flex-container .flex-item .job .company-wrapper .job-ti
   font-size: 23px;
 }
 
+@media screen and (max-width: 600px) {
+  body.cv .main-container .flex-container .flex-item .job .company-wrapper {
+    border-bottom: 5px solid #3500c9;
+    background-image: -webkit-gradient(linear, left top, right top, from(#01a4a7), to(#4500ff));
+    background-image: linear-gradient(to right, #01a4a7, #4500ff);
+  }
+}
+
 body.cv .main-container .flex-container .flex-item .job .description {
   background-color: #0700225e;
   border: 1px solid #4500ff;
