@@ -187,3 +187,23 @@ a.button {
     box-shadow: 0 0 20px $tertiary-color !important;
   }
 }
+
+a.button__gradient {
+  background: none;
+  padding: 10px 15px;
+  background: -webkit-linear-gradient($primary-color, $neon-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  &:hover {
+    text-shadow: none !important;
+  }
+}
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, $neon-purple, $primary-color);
+}
