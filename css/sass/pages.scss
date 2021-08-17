@@ -284,9 +284,11 @@ body.about {
     @media screen and (max-width: 1024px) {
       &.about-me {
         flex-wrap: wrap;
-        p {
-          text-align: center;
-        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      p {
+        text-align: center;
       }
     }
   }
@@ -303,7 +305,7 @@ body.about {
         width: 100%;
         text-align: left;
         background-image: linear-gradient(#03001f82, $neon-purple);
-        border-bottom: 3px solid $primary-color;
+        border-bottom: 5px solid #3500c9;
         padding: 0 20px;
         border-radius: 8px;
         h3 {
@@ -454,6 +456,7 @@ body.cv {
         margin: 30px;
         h2 {
           font-family: $heading-font;
+          color: #06dfe3;
         }
         .job {
           display: flex;
@@ -475,7 +478,9 @@ body.cv {
           }
           .company-wrapper {
             height: max-content;
-            text-align: right;
+            text-align: center;
+            background-image: linear-gradient(to right, #01a4a7, #4500ff);
+            border-bottom: 5px solid #3500c9;
             @media screen and (max-width: 1024px) {
               order: 2;
             }
@@ -521,7 +526,7 @@ body.cv {
           &.flipped {
             .company-wrapper {
               order: 2;
-              text-align: left;
+              // text-align: left;
             }
             .description {
               order: 1;

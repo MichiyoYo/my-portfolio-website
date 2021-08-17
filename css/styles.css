@@ -69,9 +69,15 @@ main {
           justify-content: center;
 }
 
-@media screen and (min-width: 812px) and (max-width: 1075px) {
+@media screen and (max-width: 1075px) {
   main {
     margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 45%;
   }
 }
 
@@ -80,27 +86,19 @@ footer {
       flex-shrink: 0;
 }
 
-h1,
-h2 {
+h1 {
   color: #ff32a5;
   font-family: "neoneon", sans-serif;
   font-weight: 300;
-}
-
-h1 {
-  font-size: 50px;
+  font-size: 60px;
   text-shadow: 0 0 20px #ff32a5;
   text-align: center;
 }
 
 h2 {
   font-family: teko, sans-serif;
-  font-size: 30px;
-}
-
-h2 span {
+  color: #ff32a5;
   font-size: 35px;
-  display: block;
 }
 
 h3 {
@@ -255,6 +253,53 @@ a.button__secondary:focus {
 .button__secondary:hover, .button__secondary:focus {
   -webkit-box-shadow: 0 0 20px #43fbfe !important;
           box-shadow: 0 0 20px #43fbfe !important;
+}
+
+a.button__gradient {
+  background: #0500214d;
+  padding: 10px 15px;
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+}
+
+a.button__gradient:hover {
+  text-shadow: none !important;
+  -webkit-box-shadow: 0 0 20px #3500c9;
+          box-shadow: 0 0 20px #3500c9;
+}
+
+@media screen and (max-width: 600px) {
+  a.button__gradient {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #4500ff, #ff32a5);
+  color: #ff32a5 !important;
+}
+
+.border-gradient-blue {
+  border-image-source: linear-gradient(to left, #06dfe3, #4500ff);
+  color: #01a4a7 !important;
 }
 
 /* Utilities */
@@ -1199,7 +1244,10 @@ body.about .row.about-me .wrapper__main-skills {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  body.about .row.about-me p {
+}
+
+@media screen and (max-width: 600px) {
+  body.about .row p {
     text-align: center;
   }
 }
@@ -1222,7 +1270,7 @@ body.about .skills-grid__grid-item {
     text-align: left;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#03001f82), to(#4500ff));
     background-image: linear-gradient(#03001f82, #4500ff);
-    border-bottom: 3px solid #ff32a5;
+    border-bottom: 5px solid #3500c9;
     padding: 0 20px;
     border-radius: 8px;
   }
@@ -1395,6 +1443,7 @@ body.cv .main-container .flex-container .flex-item {
 
 body.cv .main-container .flex-container .flex-item h2 {
   font-family: "neoneon", sans-serif;
+  color: #06dfe3;
 }
 
 body.cv .main-container .flex-container .flex-item .job {
@@ -1436,7 +1485,10 @@ body.cv .main-container .flex-container .flex-item .job .company-wrapper {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  text-align: right;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#01a4a7), to(#4500ff));
+  background-image: linear-gradient(to right, #01a4a7, #4500ff);
+  border-bottom: 5px solid #3500c9;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1504,7 +1556,6 @@ body.cv .main-container .flex-container .flex-item .job.flipped .company-wrapper
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  text-align: left;
 }
 
 body.cv .main-container .flex-container .flex-item .job.flipped .description {
