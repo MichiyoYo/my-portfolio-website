@@ -191,9 +191,7 @@ a.button {
 a.button__gradient {
   background: none;
   padding: 10px 15px;
-  background: -webkit-linear-gradient($primary-color, $neon-purple);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: $primary-color !important;
   font-weight: 500;
   &:hover {
     text-shadow: none !important;

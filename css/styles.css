@@ -260,9 +260,7 @@ a.button__secondary:focus {
 a.button__gradient {
   background: none;
   padding: 10px 15px;
-  background: -webkit-linear-gradient(#ff32a5, #4500ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff32a5 !important;
   font-weight: 500;
 }
 
