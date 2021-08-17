@@ -1,8 +1,9 @@
 @charset "UTF-8";
 /* Fonts */
 @font-face {
-  font-family: "neoneon", sans-serif;
-  src: url("/fonts/Neoneon.otf");
+  font-family: "neoneon";
+  src: url("../../fonts/Neoneon.eot");
+  src: url("../../fonts/Neoneon.eot?#iefix") format("embedded-opentype"), url("../../fonts/Neoneon.woff") format("woff"), url("../../fonts/Neoneon.ttf") format("truetype"), url("../../fonts/Neoneon.svg#rsuregular") format("svg");
 }
 
 /* Base elements */
@@ -70,14 +71,14 @@ h2 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   text-shadow: 0 0 20px #ff32a5;
   text-align: center;
 }
 
 h2 {
   font-family: teko, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 span {
@@ -1045,7 +1046,7 @@ body.home .main-container .profile .profile__copy-holder {
 }
 
 body.home .main-container .profile .profile__copy-holder .main-container__subtitle {
-  font-family: neoneon, sans-serif;
+  font-family: "neoneon", sans-serif;
   font-size: 35px;
   color: #7f59ff;
   text-shadow: 0 0 20px #7f59ff;
