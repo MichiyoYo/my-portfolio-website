@@ -381,6 +381,12 @@ body.contact {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 10px;
+          .error-message {
+            color: $primary-color;
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: 400;
+          }
 
           .form__message-field {
             grid-column: 1/-1;
