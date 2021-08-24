@@ -113,20 +113,21 @@
               action="https://formspree.io/f/xbjqpogy"
               method="POST"
               id="contact-form"
+              name = "contact-form"
               class="form mt-50 pt-50"
             >
               <div class="form__name-field">
                 <label class="standard-label block mb-10" for="name"
                   >Full Name*</label
                 >
-                <input type="text" name="name" id="name" required />
+                <input type="text" name="name" id="name" />
               </div>
 
               <div class="form__email-field">
                 <label class="standard-label block mb-10" for="email"
                   >Email*</label
                 >
-                <input type="email" name="email" id="email" required />
+                <input type="email" name="email" id="email" />
               </div>
 
               <div class="form__phone-field">
@@ -152,13 +153,12 @@
                   cols="30"
                   rows="10"
                   maxlength="800"
-                  required
                 ></textarea>
                 <small class="block">Max 800 characters</small>
               </div>
-              <!-- <div class="recaptcha-field">
+              <div class="recaptcha-field">
                 <div class="g-recaptcha" data-theme="dark" data-sitekey="6LcduwQcAAAAACiJV-6vWq0RBYKXOWj3CFKMqn2e"></div> 
-              </div> -->
+              </div>
 
               <button
                 type="submit"
@@ -232,5 +232,6 @@
         <p>© 2021 Cristina D. Lester. All rights reserved.</p>
       </div>
     </footer>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

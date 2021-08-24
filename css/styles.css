@@ -1349,6 +1349,13 @@ body.contact .main-container .row .main-container__form-holder .form {
   grid-gap: 10px;
 }
 
+body.contact .main-container .row .main-container__form-holder .form .error-message {
+  color: #ff32a5;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
 body.contact .main-container .row .main-container__form-holder .form .form__message-field {
   grid-column: 1/-1;
 }
