@@ -1149,6 +1149,10 @@ body.home .main-container .profile .profile__copy-holder .main-container__subtit
 }
 
 /* Work page */
+body.work .main-container {
+  width: 70%;
+}
+
 body.work .grid__item {
   display: inline-block;
   width: 33%;
@@ -1227,7 +1231,12 @@ body.about .row.about-me {
 }
 
 body.about .row.about-me .skill-list {
-  list-style-type: disc;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+body.about .row.about-me .skill-list li {
+  margin-bottom: 6px;
 }
 
 body.about .row.about-me .wrapper__about-me {
@@ -1522,6 +1531,10 @@ body.cv .main-container .flex-container .flex-item .job .company-wrapper .city {
 
 body.cv .main-container .flex-container .flex-item .job .company-wrapper .job-title {
   font-size: 23px;
+}
+
+body.cv .main-container .flex-container .flex-item .job .company-wrapper a.link-title {
+  color: #dccfff;
 }
 
 body.cv .main-container .flex-container .flex-item .job .description {

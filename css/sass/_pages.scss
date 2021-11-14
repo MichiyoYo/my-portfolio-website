@@ -210,6 +210,9 @@ body.home {
 
 /* Work page */
 body.work {
+  .main-container {
+    width: 70%;
+  }
   .grid__item {
     display: inline-block;
     width: 33%;
@@ -274,7 +277,11 @@ body.about {
     &.about-me {
       display: flex;
       .skill-list {
-        list-style-type: disc;
+        list-style-type: none;
+        padding-left: 0;
+        li {
+          margin-bottom: 6px;
+        }
       }
       .wrapper__about-me {
         flex: 3 1 80%;
@@ -503,6 +510,9 @@ body.cv {
             }
             .job-title {
               font-size: 23px;
+            }
+            a.link-title {
+              color: $text-color;
             }
           }
           .description {
