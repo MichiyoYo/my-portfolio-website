@@ -1088,6 +1088,12 @@ body.home .main-container .profile .profile__photo-holder .profile__portrait {
   vertical-align: middle;
 }
 
+@media screen and (max-width: 300px) {
+  body.home .main-container .profile .profile__photo-holder .profile__portrait {
+    max-width: 250px;
+  }
+}
+
 body.home .main-container .profile .profile__copy-holder {
   text-align: left;
   display: -webkit-box;
@@ -1123,6 +1129,7 @@ body.home .main-container .profile .profile__copy-holder .main-container__subtit
   body.home .main-container .profile .profile__copy-holder {
     text-align: center;
     padding-left: 0;
+    padding-right: 0;
   }
   body.home .main-container .profile .profile__copy-holder .main-container__title {
     margin-bottom: 0;
@@ -1149,6 +1156,10 @@ body.home .main-container .profile .profile__copy-holder .main-container__subtit
 }
 
 /* Work page */
+body.work .main-container {
+  width: 70%;
+}
+
 body.work .grid__item {
   display: inline-block;
   width: 33%;
@@ -1227,7 +1238,12 @@ body.about .row.about-me {
 }
 
 body.about .row.about-me .skill-list {
-  list-style-type: disc;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+body.about .row.about-me .skill-list li {
+  margin-bottom: 6px;
 }
 
 body.about .row.about-me .wrapper__about-me {
@@ -1323,10 +1339,21 @@ body.contact .main-container .row.contact {
   grid-gap: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  body.contact .main-container .row.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   body.contact .main-container .row.contact {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    padding: 0;
   }
 }
 
@@ -1347,6 +1374,18 @@ body.contact .main-container .row .main-container__form-holder .form {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  body.contact .main-container .row .main-container__form-holder .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body.contact .main-container .row .main-container__form-holder .form .error-message {
@@ -1522,6 +1561,10 @@ body.cv .main-container .flex-container .flex-item .job .company-wrapper .city {
 
 body.cv .main-container .flex-container .flex-item .job .company-wrapper .job-title {
   font-size: 23px;
+}
+
+body.cv .main-container .flex-container .flex-item .job .company-wrapper a.link-title {
+  color: #dccfff;
 }
 
 body.cv .main-container .flex-container .flex-item .job .description {
