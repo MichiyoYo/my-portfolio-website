@@ -1088,6 +1088,12 @@ body.home .main-container .profile .profile__photo-holder .profile__portrait {
   vertical-align: middle;
 }
 
+@media screen and (max-width: 300px) {
+  body.home .main-container .profile .profile__photo-holder .profile__portrait {
+    max-width: 250px;
+  }
+}
+
 body.home .main-container .profile .profile__copy-holder {
   text-align: left;
   display: -webkit-box;
@@ -1123,6 +1129,7 @@ body.home .main-container .profile .profile__copy-holder .main-container__subtit
   body.home .main-container .profile .profile__copy-holder {
     text-align: center;
     padding-left: 0;
+    padding-right: 0;
   }
   body.home .main-container .profile .profile__copy-holder .main-container__title {
     margin-bottom: 0;

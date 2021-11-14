@@ -152,6 +152,9 @@ body.home {
         .profile__portrait {
           width: 100%;
           max-width: 300px;
+          @media screen and (max-width: 300px) {
+            max-width: 250px;
+          }
           height: auto;
           border-radius: 50%;
           border: 6px solid $primary-color;
@@ -183,6 +186,7 @@ body.home {
         .profile__copy-holder {
           text-align: center;
           padding-left: 0;
+          padding-right: 0;
           .main-container__title {
             margin-bottom: 0;
           }
