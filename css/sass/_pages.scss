@@ -133,6 +133,15 @@
 
 /* Home */
 body.home {
+  main {
+    margin-top: 250px;
+    @media screen and (max-width: 600px) {
+      margin-top: 400px;
+    }
+    @media screen and (max-width: 375px) {
+      margin-top: 350px;
+    }
+  }
   .main-container {
     .profile {
       display: grid;

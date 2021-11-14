@@ -45,21 +45,9 @@ main {
   }
 }
 
-main {
-  margin-top: 250px;
-}
-body.home {
-  @media screen and (max-width: 600px) {
-    main {
-      margin-top: 400px;
-    }
-  }
-  @media screen and (max-width: 375px) {
-    main {
-      margin-top: 350px;
-    }
-  }
-}
+// main {
+//   margin-top: 250px;
+// }
 
 footer {
   flex-shrink: 0;

@@ -75,22 +75,6 @@ main {
   }
 }
 
-main {
-  margin-top: 250px;
-}
-
-@media screen and (max-width: 600px) {
-  body.home main {
-    margin-top: 400px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  body.home main {
-    margin-top: 350px;
-  }
-}
-
 footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1062,6 +1046,22 @@ a.button__gradient:hover {
 
 /* ❤️ PAGES ❤️ */
 /* Home */
+body.home main {
+  margin-top: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  body.home main {
+    margin-top: 400px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body.home main {
+    margin-top: 350px;
+  }
+}
+
 body.home .main-container .profile {
   display: -ms-grid;
   display: grid;
