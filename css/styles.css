@@ -75,9 +75,13 @@ main {
   }
 }
 
+main {
+  margin-top: 45%;
+}
+
 @media screen and (max-width: 600px) {
-  main {
-    margin-top: 45%;
+  body.home main {
+    margin-top: 400px;
   }
 }
 
@@ -1073,6 +1077,12 @@ body.home .main-container .profile .profile__photo-holder .helper {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  body.home .main-container .profile .profile__photo-holder .helper {
+    display: none;
+  }
 }
 
 body.home .main-container .profile .profile__photo-holder .profile__portrait {

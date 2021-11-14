@@ -148,6 +148,9 @@ body.home {
           display: inline-block;
           height: 100%;
           vertical-align: middle;
+          @media screen and (max-width: 600px) {
+            display: none;
+          }
         }
         .profile__portrait {
           width: 100%;
