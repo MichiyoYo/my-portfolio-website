@@ -46,12 +46,17 @@ main {
 }
 
 main {
-  margin-top: 45%;
+  margin-top: 250px;
 }
 body.home {
   @media screen and (max-width: 600px) {
     main {
       margin-top: 400px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    main {
+      margin-top: 350px;
     }
   }
 }
