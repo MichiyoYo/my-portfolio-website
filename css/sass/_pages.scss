@@ -364,10 +364,14 @@ body.contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
+        @media screen and (max-width: 600px) {
+          display: flex;
+          flex-direction: column;
+        }
       }
       @media screen and (max-width: 1024px) {
         &.contact {
-          grid-template-columns: 1fr;
+          padding: 0;
         }
       }
       .main-container__copy-holder {
@@ -388,6 +392,10 @@ body.contact {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 10px;
+          @media screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+          }
           .error-message {
             color: $primary-color;
             font-size: 14px;

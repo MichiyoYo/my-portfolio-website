@@ -1332,10 +1332,21 @@ body.contact .main-container .row.contact {
   grid-gap: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  body.contact .main-container .row.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   body.contact .main-container .row.contact {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    padding: 0;
   }
 }
 
@@ -1356,6 +1367,18 @@ body.contact .main-container .row .main-container__form-holder .form {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  body.contact .main-container .row .main-container__form-holder .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body.contact .main-container .row .main-container__form-holder .form .error-message {
