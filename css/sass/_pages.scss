@@ -387,6 +387,7 @@ body.about {
 
 body.contact {
   .main-container {
+    padding: 5vw 20px 15vw;
     .row {
       &.contact {
         display: grid;
@@ -403,6 +404,12 @@ body.contact {
         }
       }
       .main-container__copy-holder {
+        .email-me-btn {
+          margin-right: 20px;
+          @media screen and (max-width: 600px) {
+            margin-right: 0;
+          }
+        }
         .copy {
           h1 {
             text-align: left;

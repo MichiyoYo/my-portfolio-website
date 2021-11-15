@@ -1365,6 +1365,10 @@ body.about .skills-grid__grid-item {
 }
 
 /* Contact page */
+body.contact .main-container {
+  padding: 5vw 20px 15vw;
+}
+
 body.contact .main-container .row.contact {
   display: -ms-grid;
   display: grid;
@@ -1388,6 +1392,16 @@ body.contact .main-container .row.contact {
 @media screen and (max-width: 1024px) {
   body.contact .main-container .row.contact {
     padding: 0;
+  }
+}
+
+body.contact .main-container .row .main-container__copy-holder .email-me-btn {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body.contact .main-container .row .main-container__copy-holder .email-me-btn {
+    margin-right: 0;
   }
 }
 
