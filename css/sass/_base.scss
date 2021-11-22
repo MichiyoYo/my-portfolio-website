@@ -9,6 +9,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 html {
   background: url("../img/footer-bkg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -77,6 +78,10 @@ h3 {
   h1 {
     font-size: 50px;
   }
+}
+h4 {
+  font-family: teko, sans-serif;
+  font-size: 1.5rem;
 }
 p {
   font-family: $body-font;

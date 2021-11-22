@@ -110,6 +110,11 @@ h3 {
   }
 }
 
+h4 {
+  font-family: teko, sans-serif;
+  font-size: 1.5rem;
+}
+
 p {
   font-family: roboto-condensed, sans-serif;
   font-weight: 300;
@@ -1207,7 +1212,7 @@ body.work .flex-grid .grid__item {
   background-image: -webkit-gradient(linear, left top, right top, from(#01a4a7), to(#4500ff));
   background-image: linear-gradient(to right, #01a4a7, #4500ff);
   border-bottom: 5px solid #3500c9;
-  padding: 40px 20px 30px;
+  padding: 40px;
   text-align: center;
   width: auto;
   min-height: auto;
@@ -1707,4 +1712,12 @@ body.thank-you .main-container {
 
 body.thank-you .main-container .button__primary {
   margin: auto;
+}
+
+body.case-study {
+  background-color: transparent !important;
+}
+
+body.case-study img {
+  width: 100%;
 }
