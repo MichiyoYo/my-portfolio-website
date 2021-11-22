@@ -1721,3 +1721,11 @@ body.case-study {
 body.case-study img {
   width: 100%;
 }
+
+body.case-study small {
+  text-align: center !important;
+}
+
+body.case-study .main-container {
+  max-width: auto !important;
+}
