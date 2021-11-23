@@ -313,6 +313,9 @@ body.about {
         li {
           margin-bottom: 6px;
         }
+        @media screen and (max-width: $small) {
+          padding-left: 56px;
+        }
       }
       .wrapper__about-me {
         flex: 3 1 80%;
