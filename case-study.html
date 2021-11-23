@@ -74,7 +74,7 @@
           NotFlix App<span class="block">Case Study</span>
         </h1>
         <div class="row intro mt-60">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <h2>OVERVIEW</h2>
             <p>
               NotFlix is a web application that will provide users with access
@@ -83,46 +83,62 @@
               and create a list of their favorite movies and a watch list of
               movies they intend to watch.
             </p>
-          </div>
-          <div class="col-md-4">
-            <h2>OBJECTIVE</h2>
             <p>
-              The aim of the project was to have ambitious full stack projects I
-              can add to my professional portfolio. The problem I wanted to
-              resolve is to build a complete server-side and client-side web
-              application. NotFlix is, in fact, a full-stack web application:
-              the client side uses React while the server side uses Node.
+              The name of the app is a play on words on the name Netflix, the
+              famous streaming service. I picked it because the content of the
+              app reminded me of Netflix without giving the option to stream
+              video content. Since it is not Netflix I combined the words “not”
+              and “Netflix” into NotFlix.
+            </p>
+            <h2>THE PROBLEM</h2>
+            <p>
+              Movie lovers want to learn as much as possible about films and tv
+              shows. For example, they may want to learn about a movie’s
+              director, genre, cast and rating. NotFlix delivers all these info
+              to anyone who’s interested, right at their fingertips. The purpose
+              of the app is to facilitate access to movie information thanks to
+              a single-page fast application that lets users create watchlists
+              and favorite movie lists so they can easily find the movies they
+              are interested into and read about them.
             </p>
           </div>
-          <div class="col-md-4">
-            <h2>PURPOSE & CONTEXT</h2>
+          <div class="col-md-6">
+            <h2>MY ROLE</h2>
+
             <p>
-              NotFlix is a personal project I built as part of my web
-              development course at CareerFoundry to practice and demonstrate my
-              mastery of full-stack JavaScript developer.
+              In this project I’ve been the designer and the developer, to
+              showcase my abilities of Full Stack Web Developer. I adopted the
+              MERN paradigm (MongoDB, Express, React, Node).
+            </p>
+
+            <p>
+              I started from the server-side application, with designing a REST
+              API. I decided in which form the data would be stored and
+              delivered to the client application. I picked MongoDB to
+              experiment with non-relational databases and utilized Node and
+              Express to interact with it.
+            </p>
+            <p>
+              Then I moved on to the client-side application, where I had the
+              chance to practice with React. Before starting to implement the
+              functionalities, I created the UX design using Abobe XD to make a
+              prototype. I wanted the app to be intuitive and clear but still
+              colorful and fun since the main concept is “entertainment”.
+            </p>
+            <p>
+              Once I had the UX interface down, I moved onto the implementation
+              of the components and I made them interact with the backend using
+              Axios methods.
             </p>
           </div>
         </div>
         <div class="row server-app">
           <div class="col-md-6">
             <h2>Server Application: NotFlix API</h2>
+
             <p>
-              An API (Application Programming Interface) is a set of
-              communication protocols that allow a software application to plug
-              into another one and exchange information.
-            </p>
-            <p>
-              REST (Representational State Transfer) is a common architectural
-              pattern that allows the client application to require resources
-              from the server by referring to them through endpoints or URLs. By
-              receiving the request through HTTP, the API/web service can locate
-              the resource on the server if present, and send back the resource
-              itself or a message that specifies what data manipulation has been
-              applied.
-            </p>
-            <p>
-              The server application NotFlix API follows the above architecture,
-              and it has been implemented by using Node and Express to realize
+              The server application NotFlix API follows a REST architecture,
+              which has been implemented by using Node and Express to realize
               the web service, while the data has been stored on a NoSQL
               database, MongoDB.
             </p>
@@ -214,19 +230,11 @@
               I created earlier.
             </p>
             <p>
-              I had fun implementing the UX for the frontend: I used React
-              Bootstrap to give a skeleton to my interface and then I customized
-              it with CSS animations, flexbox and colorful gradients.
+              To implement the UX for the frontend, which I previously designed
+              myself in Adobe XD, I used React Bootstrap to give a skeleton to
+              my interface and then I customized it with CSS animations, flexbox
+              and colorful gradients.
             </p>
-
-            <p>
-              After understanding the main concepts of React, such as state,
-              props and hooks, I felt immediately confident to create all the
-              components I needed, choosing to implement them modularly. I made
-              sure that each component takes care of the minimum number of
-              functionalities.
-            </p>
-
             <p>
               All the requests made through Axios need to be authenticated, so
               that the API can allow the client to receive the resources it is
@@ -235,6 +243,7 @@
               after authenticating the user during the login phase, and then
               stored locally.
             </p>
+
             <p>
               I deployed
               <a href="https://notflix-db.netlify.app/" target="_blank"
@@ -277,37 +286,64 @@
           </div>
         </div>
         <div class="row conclusion">
-          <div class="col-md-9 mb-50">
-            <h2>Challenges</h2>
+          <div class="col-md-12 mb-50">
+            <h2>Challenges & Solutions</h2>
             <p>
-              NotFlix has been the largest and most challenging project I worked
-              on during the CareerFoundry program. While working on it, I
-              learned the skills I was interested into, such as designing and
-              implementing a RESTful API, storing data in a non-relational
-              database, authenticating users, and building a fast and responsive
-              client application with one of the most popular libraries
-              available - React.
+              Initially, to start this React project, I used the npm module
+              Parcel to compile the code and create the build of the app to run,
+              but I was incurring into CORS errors when trying to retrieve the
+              images from the database. The link to the images that were served
+              were not easily accessible and that was a problem I needed to
+              resolve, since the movie poster is one of the main data I needed
+              to show in a movie’s detailed view.
             </p>
             <p>
-              The part I found most challenging has been integrating Redux to
-              manage the state of the app, understanding actions and reducers
-              and using them to make the state available to the components by
-              mapping it to the props.
+              I made sure that the server-side application was allowing URLs
+              coming from any source, but unfortunately that wasn’t fixing my
+              issue.
             </p>
             <p>
-              I also spent some time debugging the app when I stumbled upon a
-              CORS error, which was actually due to a syntax error in the
-              request the client was sending to the server. After thoroughly
-              reading the Axios documentation I learned that, for a POST
-              request, I had to include the body of the request before the
-              headers’ object, even if the body is empty.
+              I did some research and I found that the Parcel version I was
+              using was older and creating conflicts with some dependencies, so
+              the CORS errors weren’t handled properly. While researching I also
+              learned about ways to structure the code with a better
+              architecture that follows the React best practices. In the end I
+              decided to start over and instead initialize my React application
+              by using the create-react-app module rather than Parcel.
             </p>
             <p>
-              Overall, this was my favorite and most complex application, and I
-              am proud of it!
+              This also fixed the problem with the images’ URLs, resolving the
+              CORS errors.
+            </p>
+            <p>
+              In phase of development, the part I found most challenging has
+              been adding Redux to manage the state of the app, after the app
+              was already in development, so I had to face the problem of using
+              a different approach and integrating a new module and its concepts
+              into a started project. Even if the learning curve was steep at
+              the beginning, I understood actions and reducers and I used them
+              to make the state available to any component in the app.
+            </p>
+            <h3>What went well and what didn’t</h3>
+            <p>
+              Designing the UI and the UX of the application first helped me to
+              understand how to structure the components I was going to create.
+              In that way I was able to modularize the functionalities of each
+              part of the app and keep them separate which made the components
+              reusable and the app highly scalabe.
+            </p>
+            <h3>What I'd do differently</h3>
+            <p>
+              To implement my future React applications I’ll probably start with
+              create-react-app. The setup was fast and its dependencies were
+              compatible with everything else I was using. Also it uses Webpack
+              to create the build of the app and it requires zero configuration,
+              while Parcel needed to be configured manually and it was creating
+              issues with the rest of the modules, besides provoking the CORS
+              errors.
             </p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-12">
             <h2 class="text-left">Duration</h2>
             <p><b>Server-Side</b>: 7 days</p>
             <p><b>Client-Side</b>: 14 days</p>
