@@ -1263,6 +1263,10 @@ body.work .flex-grid .grid__item .project-screenshot img {
 }
 
 /* About Page */
+body.about {
+  background-color: transparent !important;
+}
+
 body.about .main-container {
   display: -ms-grid;
   display: grid;
@@ -1371,6 +1375,15 @@ body.about .skills-grid__grid-item {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+}
+
+body.about .reviews blockquote {
+  border-left: 6px solid #ff32a5;
+  padding-left: 10px;
+}
+
+body.about .reviews cite {
+  float: right;
 }
 
 /* Contact page */
@@ -1525,6 +1538,19 @@ body.contact .main-container .row .main-container__form-holder small {
 
 body.cv .main-container {
   max-width: 95%;
+}
+
+body.cv .main-container .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body.cv .main-container .flex-container {
