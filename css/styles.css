@@ -1053,20 +1053,10 @@ a.button__gradient:hover {
 
 /* ❤️ PAGES ❤️ */
 /* Home */
-body.home main {
-  margin-top: 250px;
-}
-
-@media screen and (max-width: 600px) {
-  body.home main {
-    margin-top: 400px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  body.home main {
-    margin-top: 350px;
-  }
+body.home {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body.home .main-container .profile {
@@ -1174,8 +1164,23 @@ body.home .main-container .profile .profile__copy-holder .main-container__subtit
 
 @media screen and (max-width: 900px) {
   body.home .main-container {
-    padding: 48vw 20px 15vw;
+    padding: 20px 15vw;
   }
+}
+
+body.home .main-container__socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+body.home .main-container__socials-list li {
+  margin-right: 8px;
+}
+
+body.home .main-container__socials-list li:last-child {
+  margin-right: 0;
 }
 
 /* Work page */
@@ -1291,6 +1296,12 @@ body.about .row.about-me .skill-list {
 
 body.about .row.about-me .skill-list li {
   margin-bottom: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  body.about .row.about-me .skill-list {
+    padding-left: 56px;
+  }
 }
 
 body.about .row.about-me .wrapper__about-me {
