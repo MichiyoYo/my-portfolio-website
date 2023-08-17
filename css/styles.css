@@ -1047,7 +1047,7 @@ body.work .filters .filter-button {
   cursor: pointer;
 }
 body.work .filters .active-filter {
-  box-shadow: 0px 0px 20px 4px #ff32a5;
+  box-shadow: 0px 0px 20px 0.5px #ff32a5;
 }
 body.work .projects {
   display: flex;
