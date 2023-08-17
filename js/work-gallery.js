@@ -1,15 +1,24 @@
 (function () {
+  const filterBtns = document.querySelectorAll('.filter-button');
   const workGallery = document.querySelector('.projects');
   const workGalleryItems = workGallery.querySelectorAll('.project');
-  console.log(workGalleryItems);
-  //get data-type attribute from each item
-  workGalleryItems.forEach((item) => {
-    const type = item.getAttribute('data-type');
-    console.log(type);
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      filterBtns.forEach((btn) => {
+        btn.classList.remove('active-filter');
+      });
+      btn.classList.add('active-filter');
+      const filter = e.target.dataset.type;
+      const itemsArray = Array.from(workGalleryItems);
+      itemsArray.forEach((item) => {
+        if (item.dataset.type.includes(filter) || filter === 'all') {
+          item.classList.remove('hide');
+        } else {
+          item.classList.add('hide');
+        }
+      });
+    });
   });
-  //loop through each item and add a click event listener
-  //when clicked, check if the data-type attribute matches the filter
-  //if it does, show the item
-  //if it doesn't, hide the item
-  //if the filter is 'all', show all items
 })();
