@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;800&display=swap");
 @font-face {
   font-family: "neoneon";
   src: url("../fonts/Neoneon.eot");

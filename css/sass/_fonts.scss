@@ -1,9 +1,11 @@
 /* Fonts */
 @font-face {
-  font-family: "neoneon";
-  src: url("../fonts/Neoneon.eot");
-  src: url("../fonts/Neoneon.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Neoneon.woff") format("woff"),
-    url("../fonts/Neoneon.ttf") format("truetype"),
-    url("../fonts/Neoneon.svg#rsuregular") format("svg");
+  font-family: 'neoneon';
+  src: url('../fonts/Neoneon.eot');
+  src: url('../fonts/Neoneon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Neoneon.woff') format('woff'),
+    url('../fonts/Neoneon.ttf') format('truetype'),
+    url('../fonts/Neoneon.svg#rsuregular') format('svg');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;800&display=swap');
