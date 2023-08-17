@@ -148,7 +148,7 @@ body.home {
     .profile {
       display: grid;
       grid-template-columns: 1fr 2fr;
-      & > [class^="profile"] {
+      & > [class^='profile'] {
         padding: 20px;
       }
       .profile__photo-holder {
@@ -238,6 +238,11 @@ body.home {
 
 /* Work page */
 body.work {
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
   .main-container {
     width: 75%;
     padding: 3px;
@@ -604,7 +609,7 @@ body.cv {
               }
             }
             &:before {
-              content: "";
+              content: '';
               height: 2px;
               background: $neon-purple;
               width: 30px;
@@ -632,7 +637,7 @@ body.cv {
             }
           }
           &::before {
-            content: "";
+            content: '';
             background-color: #3500c9;
             width: 3px;
             height: 200px;
