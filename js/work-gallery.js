@@ -14,9 +14,11 @@
       const itemsArray = Array.from(workGalleryItems);
       itemsArray.forEach((item) => {
         if (item.dataset.type.includes(filter) || filter === 'all') {
-          item.classList.remove('hide');
+          item.classList.remove('hideWork');
+          item.classList.add('showWork');
         } else {
-          item.classList.add('hide');
+          item.classList.add('hideWork');
+          item.classList.remove('showWork');
         }
       });
     });

@@ -281,6 +281,20 @@ body.work {
     grid-gap: 30px;
     padding: 10px;
     .project {
+      &.showWork {
+        animation: fadeIn 1s ease;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      &.hideWork {
+        display: none;
+      }
       background-image: linear-gradient(to right, #01a4a7, #4500ff);
       border-bottom: 5px solid #3500c9;
       padding: 40px;

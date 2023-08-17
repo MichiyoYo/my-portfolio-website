@@ -299,16 +299,6 @@ a.button__gradient:hover {
     padding: 20px;
   }
 }
-.fadeOut {
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
-}
-
-.fadeIn {
-  animation: fadeIn 0.5s ease-in-out;
-  opacity: 1;
-}
-
 /* Spacers */
 .m-0 {
   margin: 0px !important;
@@ -1068,6 +1058,20 @@ body.work .projects .project {
   transition: box-shadow 0.2s ease;
   width: 30%;
   max-width: auto;
+}
+body.work .projects .project.showWork {
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body.work .projects .project.hideWork {
+  display: none;
 }
 @media screen and (max-width: 1650px) {
   body.work .projects .project {
