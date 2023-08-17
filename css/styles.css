@@ -773,6 +773,22 @@ a.button__gradient:hover {
   text-shadow: 0 0 21px #ff32a5, 0 0 42px #ff32a5, 0 0 82px #ff32a5, 0 0 92px #ff32a5, 0 0 102px #ff32a5, 0 0 151px #ff32a5;
 }
 
+.showWork {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hideWork {
+  display: none;
+}
+
 /* Header */
 .page-header {
   background-image: linear-gradient(to right, #03001e, #270144);
@@ -1058,20 +1074,6 @@ body.work .projects .project {
   transition: box-shadow 0.2s ease;
   width: 30%;
   max-width: auto;
-}
-body.work .projects .project.showWork {
-  animation: fadeIn 1s ease;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-body.work .projects .project.hideWork {
-  display: none;
 }
 @media screen and (max-width: 1650px) {
   body.work .projects .project {
