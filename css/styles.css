@@ -1007,19 +1007,36 @@ body.work video {
   border-radius: 20px;
 }
 body.work .main-container {
-  width: 75%;
+  max-width: 90%;
+  padding: 4vw 20px;
+}
+body.work .main-container__copy-holder {
+  width: 100%;
   padding: 3px;
   margin-top: 80px;
 }
 @media screen and (max-width: 600px) {
-  body.work .main-container {
+  body.work .main-container__copy-holder {
     width: auto;
   }
 }
-body.work .grid__item {
-  width: 33%;
+body.work .filters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-body.work .flex-grid {
+@media screen and (max-width: 600px) {
+  body.work .filters {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+body.work .filters .filter-button {
+  cursor: pointer;
+}
+body.work .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -1027,7 +1044,7 @@ body.work .flex-grid {
   grid-gap: 30px;
   padding: 10px;
 }
-body.work .flex-grid .grid__item {
+body.work .projects .project {
   background-image: linear-gradient(to right, #01a4a7, #4500ff);
   border-bottom: 5px solid #3500c9;
   padding: 40px;
@@ -1039,29 +1056,41 @@ body.work .flex-grid .grid__item {
   width: 30%;
   max-width: auto;
 }
-body.work .flex-grid .grid__item:hover {
+@media screen and (max-width: 1650px) {
+  body.work .projects .project {
+    width: 48%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  body.work .projects .project {
+    width: auto;
+    padding: 10px;
+  }
+}
+body.work .projects .project:hover {
   box-shadow: 0 0 40px #4500ff;
 }
-body.work .flex-grid .grid__item .project-title {
+body.work .projects .project .project-title {
   font-family: teko, sans-serif;
   margin-top: 0;
   color: #dccfff;
   font-size: 30px;
 }
-body.work .flex-grid .grid__item .project-description {
+body.work .projects .project .project-description {
   color: #dccfff;
   font-weight: 400;
 }
-body.work .flex-grid .grid__item .project-link {
+body.work .projects .project .project-link {
   color: #dccfff !important;
 }
 @media screen and (max-width: 600px) {
-  body.work .flex-grid .grid__item {
+  body.work .projects .project {
     width: auto;
     padding: 40px 15px 30px;
   }
 }
-body.work .flex-grid .grid__item .project-screenshot img {
+body.work .projects .project .project-screenshot img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 20px;

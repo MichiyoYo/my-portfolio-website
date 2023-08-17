@@ -244,27 +244,39 @@ body.work {
     border-radius: 20px;
   }
   .main-container {
-    width: 75%;
+    max-width: 90%;
+    padding: 4vw 20px;
+  }
+  .main-container__copy-holder {
+    width: 100%;
     padding: 3px;
     margin-top: 80px;
     @media screen and (max-width: 600px) {
       width: auto;
     }
   }
-  .grid__item {
-    width: 33%;
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      width: 100%;
+      padding: 0 20px;
+    }
+    .filter-button {
+      cursor: pointer;
+    }
   }
-  .flex-grid {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
-    // grid-gap: 50px;
+  .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 0;
     grid-gap: 30px;
     padding: 10px;
-    .grid__item {
+    .project {
       background-image: linear-gradient(to right, #01a4a7, #4500ff);
       border-bottom: 5px solid #3500c9;
       padding: 40px;
@@ -276,6 +288,14 @@ body.work {
       width: 30%;
       max-width: auto;
 
+      @media screen and (max-width: 1650px) {
+        width: 48%;
+        padding: 10px;
+      }
+      @media screen and (max-width: 900px) {
+        width: auto;
+        padding: 10px;
+      }
       &:hover {
         box-shadow: 0 0 40px $neon-purple;
       }
